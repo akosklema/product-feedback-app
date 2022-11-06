@@ -1,0 +1,88 @@
+.button {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-250);
+  border: none;
+  border-radius: 10px;
+  color: hsl(var(--clr-light-gray-350));
+  cursor: pointer;
+}
+
+.button--1 {
+  background-color: hsl(var(--clr-purple));
+}
+
+.button--1:hover {
+  background-color: hsl(282, 90%, 66%);
+}
+
+.button--2 {
+  background-color: hsl(var(--clr-light-blue-400));
+}
+
+.button--2:hover {
+  background-color: hsl(230, 91%, 73%);
+  
+}
+
+.button--3 {
+  background-color: hsl(var(--clr-dark-blue-300));
+}
+
+.button--3:hover {
+  background-color: hsl(231, 25%, 52%);
+}
+
+.button--4 {
+  background-color: hsl(var(--clr-red));
+}
+
+.button--4:hover {
+  background-color: hsl(0, 69%, 72%);
+}
+
+.button--back {
+  background-color: transparent;
+  border: none;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-250);
+  color: hsl(var(--clr-dark-gray));
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.button--back:hover {
+  text-decoration: underline;
+}
+
+.button--back--light {
+  color: hsl(var(--clr-white));
+}
+
+.back-arrow-light path {
+  stroke: hsl(231, 49%, 87%);
+}
+
+.button--reply {
+  background-color: transparent;
+  border: none;
+  font-size: var(--fs-250);
+  font-weight: var(--fw-600);
+  color: hsl(var(--clr-light-blue-400));
+  cursor: pointer;
+}
+
+.button--reply:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: var(--fs-300);
+  }
+
+  .button--back {
+    font-size: var(--fs-300);
+  }
+}

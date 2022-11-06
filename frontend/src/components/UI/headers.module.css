@@ -1,0 +1,57 @@
+.header--1 {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-500);
+  line-height: 3.5rem;
+  letter-spacing: -0.033rem;
+}
+
+.header--2 {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-350);
+  line-height: 2.9rem;
+  letter-spacing: -0.025rem;
+}
+
+.header--3 {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-500);
+  line-height: 2.6rem;
+  letter-spacing: -0.025rem;
+}
+
+.header--4 {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-250);
+  line-height: 2rem;
+  letter-spacing: -0.02rem;
+}
+
+@media (min-width: 768px) {
+  .header--1 {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-800);
+    line-height: 3.5rem;
+    letter-spacing: -0.033rem;
+  }
+  
+  .header--2 {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-600);
+    line-height: 2.9rem;
+    letter-spacing: -0.025rem;
+  }
+  
+  .header--3 {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-500);
+    line-height: 2.6rem;
+    letter-spacing: -0.025rem;
+  }
+  
+  .header--4 {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-300);
+    line-height: 2rem;
+    letter-spacing: -0.02rem;
+  }
+}

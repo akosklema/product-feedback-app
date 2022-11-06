@@ -1,0 +1,34 @@
+.arrow-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color:  hsl(var(--clr-light-blue-400))
+}
+
+.pagination-arrows {
+  display: flex;
+  gap: 10rem;
+}
+
+.arrow {
+  border: 1px solid hsl(var(--clr-light-blue-400));
+  background-color: hsl(var(--clr-white));
+  border-radius: 10px;
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.arrow--inactive {
+  border: 1px solid hsl(var(--clr-dark-gray));
+  background-color: unset;
+  cursor: not-allowed
+}
+
+.arrow--inactive .arrow-icon {
+  color: hsl(var(--clr-dark-gray));
+}
+
+.arrow:hover:not(.arrow--inactive) {
+  background-color: hsl(230, 100%, 91%);
+}

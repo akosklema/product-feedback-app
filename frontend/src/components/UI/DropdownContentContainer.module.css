@@ -1,0 +1,18 @@
+.dropdown-content {
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark-gray));
+  border-radius: 10px;
+  box-shadow: 0 10px 40px -7px hsl(230 31% 31% / 0.3505);
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 200ms ease-out;
+  z-index: 100;
+}
+
+.dropdown-content div:not(:last-child) {
+  border-bottom: 1px solid hsl(227, 18%, 90%);
+}
+
+.dropdown-content-active {
+  clip-path: polygon(-20% -20%, 120% -20%, 120% 120%, -20% 120%);
+}

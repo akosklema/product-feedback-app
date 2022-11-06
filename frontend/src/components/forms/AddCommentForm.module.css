@@ -1,0 +1,40 @@
+.add-comment-title {
+ color: hsl(varl(--clr-dark-blue-300));
+ margin-bottom: 2.4rem;
+}
+
+.text-area {
+  width: 100%;
+  font-size: var(--fs-250);
+  color: hsl(var(--clr-dark-blue-300));
+}
+
+.text-area::placeholder {
+  color: hsl(231, 20%, 63%);
+}
+
+.btn-container {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.characters-left {
+  font-size: var(--fs-250);
+}
+
+.post-comment-button {
+  padding: 1.05rem 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .text-area,
+  .characters-left {
+    font-size: var(--fs-350);
+  }
+
+  .post-comment-button {
+    padding: 1.2rem 2.4rem;
+  }
+}

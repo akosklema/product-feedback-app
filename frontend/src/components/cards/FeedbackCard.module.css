@@ -1,0 +1,99 @@
+.feedback-card {
+  padding: 2.5rem;
+  background-color: hsl(var(--clr-white));
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    "details details details"
+    "details details details"
+    "upvotes . comment-stat";
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover .feedback-title {
+  color: hsl(var(--clr-light-blue-400));
+}
+
+.feedback-details {
+  grid-area: details;
+  margin-bottom: 1.4rem;
+}
+
+.feedback-title {
+  font-size: var(--fs-250);
+  color: hsl(var(--clr-dark-blue-300));
+  margin-bottom: 0.9rem;
+}
+
+.feedback-description {
+  word-break: break-word;
+}
+
+.feedback-category {
+  margin-top: 0.8rem;
+}
+
+.upvote-button {
+  grid-area: upvotes;
+  width: 6.9rem;
+  height: 3.2rem;
+  font-size: var(--fs-250);
+}
+
+.comment-stat {
+  grid-area: comment-stat;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--fs-250);
+  font-weight: var(--fw-700);
+  color: hsl(var(--clr-dark-blue-300));
+}
+
+.comment-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: hsl(231, 49%, 87%);
+}
+
+@media (min-width: 768px) {
+  .feedback-card {
+    padding: 2.8rem 3.2rem;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas:
+      "upvotes details comment-stat"
+      ". details comment-stat"
+      ". details comment-stat";
+  }
+
+  .feedback-details {
+    margin-bottom: unset;
+    justify-self: start;
+  }
+
+  .feedback-title {
+    font-size: var(--fs-500);
+    margin-bottom: 0.4rem;
+  }
+
+  .feedback-description {
+    width: fit-content;
+    margin-right: 6.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .upvote-button {
+    flex-direction: column;
+    width: fit-content;
+    height: unset;
+    justify-self: start;
+  }
+
+  .comment-stat {
+    align-self: center;
+    font-size: var(--fs-400);
+  }
+}

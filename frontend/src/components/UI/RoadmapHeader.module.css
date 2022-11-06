@@ -1,0 +1,10 @@
+.title {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-700);
+  color: hsl(var(--clr-dark-blue-300));
+  margin-bottom: 0.4rem;
+}
+
+.description {
+  font-size: var(--fs-250);
+}

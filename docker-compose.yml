@@ -1,0 +1,38 @@
+version: '3.9'
+services:
+  mongodb:
+    image: 'mongo'
+    volumes:
+      - data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=password
+  backend:
+    # build: ./backend
+    image: klemaakos/product-feedback-backend
+    ports:
+      - '8080:80'
+    volumes:
+      - images:/app/images
+    environment:
+      - PORT=80
+      - DB=mongodb://user:password@mongodb:27017/feedbacks?authSource=admin
+      - JWT_SECRET=jwtsecret
+      - JWT_REFRESH_SECRET=jwtrefreshsecret
+      - ACCESS_TOKEN_EXPIN=7d
+      - REFESH_TOKEN_EXPIN=30d
+      - CLIENT_URL=http://localhost:3000
+    depends_on:
+      - mongodb
+  frontend:
+    # build: ./frontend
+    image: klemaakos/product-feedback-backend
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend/src:/app/src
+    depends_on:
+      - backend
+volumes:
+  data:
+  images:

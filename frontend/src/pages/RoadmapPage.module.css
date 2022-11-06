@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(var(--clr-dark-blue-400));
+  padding: 2.6rem 2.4rem;
+}
+
+.header__left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.header__title {
+  color: hsl(var(--clr-white));
+}
+
+.add-feedback-button {
+  padding: 1.05rem 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .roadmap-section {
+    margin-block: 5.6rem;
+  }
+
+  .section-container {
+    margin-inline: auto;
+    width: 68.9rem;
+  }
+
+  .header {
+    border-radius: 10px;
+    margin-bottom: 3.2rem;
+  }
+
+  .header__title {
+    font-size: var(--fs-800);
+  }
+}
+
+@media (min-width: 1440px) {
+  .roadmap-section {
+    margin-block: 7.8rem;
+  }
+
+  .section-container {
+    width: 111.1rem;
+  }
+
+  .header {
+    margin-bottom: 4.8rem;
+  }
+}

@@ -1,0 +1,32 @@
+.button--upvote {
+  border: none;
+  background-color: hsl(var(--clr-light-gray-350));
+  border-radius: 10px;
+  color: hsl(var(--clr-dark-blue-300));
+  font-weight: var(--fw-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  padding: 0.8rem 1.1rem;
+}
+
+.button--upvote:hover {
+  background-color: hsl(230, 100%, 91%);
+}
+
+.button--upvote--active {
+  background-color: hsl(var(--clr-light-blue-400));
+  color: hsl(var(--clr-white));
+}
+
+.button--upvote--active .up-arrow path {
+  color: hsl(var(--clr-white));
+}
+
+.up-arrow {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: hsl(var(--clr-light-blue-400));
+}

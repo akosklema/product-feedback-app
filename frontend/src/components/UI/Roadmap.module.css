@@ -1,0 +1,53 @@
+.roadmap-container {
+  background-color: hsl(var(--clr-white));
+  padding: 1.9rem 2.4rem 2.4rem 2.4rem;
+  margin-top: 2.4rem;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-container {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-name{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.status-name:before {
+  content: '';
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+
+.status-name--planned:before {
+  background-color: hsl(var(--clr-orange));
+}
+
+.status-name--in-progress:before {
+  background-color: hsl(var(--clr-purple));
+}
+
+.status-name--live:before {
+  background-color: hsl(var(--clr-light-blue-300));
+}
+
+.status-sum {
+  font-weight: var(--fw-700);
+}

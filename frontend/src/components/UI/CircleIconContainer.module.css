@@ -1,0 +1,16 @@
+.circle-container {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(220deg, rgba(232,77,112,1) 0%, rgba(163,55,246,1) 50%, rgba(40,167,237,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .circle-container {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+}

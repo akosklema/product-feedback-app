@@ -1,0 +1,11 @@
+.dropdown-option {
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-option:hover {
+  color: hsl(var(--clr-purple));
+}

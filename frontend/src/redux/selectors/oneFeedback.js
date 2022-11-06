@@ -1,0 +1,1 @@
+export const getFeedbackSlice = state => state.feedback;

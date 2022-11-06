@@ -1,0 +1,29 @@
+.dropdown-header {
+  border: none;
+  background-color: transparent;
+  color: hsl(var(--clr-light-gray-350));
+  font-size: var(--fs-300);
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+.dropdown-header span {
+  font-weight: var(--fw-700);
+}
+
+.down-arrow {
+  margin-left: 0.9rem;
+  transition: transform 200ms;
+}
+
+.down-arrow path {
+  stroke: hsl(var(--clr-white));
+}
+
+.dropdown-header--active {
+  color: hsl(229, 21%, 81%);
+}
+
+.animate-arrow-up {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,114 @@
+.user-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.user-header {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(var(--clr-light-blue-400));
+  cursor: pointer;
+}
+
+.user-header:hover .user-name {
+  box-shadow: 0 1px 0 0 hsl(var(--clr-white));
+}
+
+.user-name-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-name {
+  color: hsl(var(--clr-white));
+  font-size: var(--fs-350);
+  font-weight: var(--fw-600);
+}
+
+.down-arrow {
+  margin-left: 0.9rem;
+  transition: transform 200ms;
+  color: hsl(var(--clr-white));
+}
+
+.down-arrow path {
+  stroke: hsl(var(--clr-white));
+}
+
+.animate-arrow-up {
+  transform: rotate(180deg);
+}
+
+.profile-img {
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+}
+
+.user-menu {
+  font-size: var(--fs-350);
+  list-style: none;
+  background-color: hsl(var(--clr-white));
+  border-radius: 10px;
+  width: 20rem;
+  box-shadow: 0 10px 40px -7px hsl(230deg 31% 31% / 15%);
+  margin: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 200ms;
+}
+
+.user-menu li {
+  cursor: pointer;
+  padding: 1.2rem 2.4rem;
+}
+
+.user-menu li:hover {
+  color: hsl(var(--clr-purple));
+}
+
+.user-menu li:not(:last-child) {
+  border-bottom: 1px solid hsl(227, 18%, 90%);
+}
+
+.user-menu--active {
+  clip-path: polygon(-20% -20%, 120% -20%, 120% 120%, -20% 120%);
+}
+
+@media (min-width: 768px) {
+  .user-menu-container {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .user-header {
+    margin-top: unset;
+    box-shadow: 0 1px 25px -7px hsl(230deg 31% 31% / 15%);
+  }
+
+  .user-menu {
+    position: absolute;
+    top: 7rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .user-menu-container {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .user-header {
+    margin-top: unset;
+    box-shadow: 0 1px 25px -7px hsl(230deg 31% 31% / 15%);
+  }
+}

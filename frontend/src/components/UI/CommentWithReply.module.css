@@ -1,0 +1,20 @@
+.container:not(:last-child) {
+  border-bottom: 1px solid hsl(227, 18%, 92%);
+}
+
+.reply-container {
+  padding-left: 2.3rem;
+  border-left: 1px solid hsl(227, 18%, 92%);
+}
+
+.reply:first-child {
+  position: relative;
+  padding-top: unset;
+}
+
+@media (min-width: 768px) {
+  .reply-container {
+    margin-left: 2rem;
+    padding-left: 2.4rem;
+  }
+}
