@@ -29,7 +29,7 @@ exports.signup = function(objRepo) {
 };
 
 exports.login = function(objRepo) {
-  const { User, signToken, bcryptHash, AppError, httpStatusCodes } = objRepo;
+  const { User, signToken, AppError, httpStatusCodes } = objRepo;
   return (req, res, next) => {
     const { email, password } = req.inputData;
     let userToLogin;
