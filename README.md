@@ -97,4 +97,4 @@ The frontend is a React single-page application. The project was boostrapped wit
 ```sh
 $ docker-compose up
 ```
-This will pull the required images from Dockerhub and run the containers. The frontend app will run on port:3000 and the server on port:8080.
+This will pull the required images from Dockerhub and run the containers. The frontend app will run on port:3000 and the server on port:8080. In this case the email service does not work, so you can't reset your password, if you forgot it.
