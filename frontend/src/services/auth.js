@@ -37,7 +37,13 @@ export function loginUser(email, password) {
       password
     })
   })
-    .then((res) => res.json())
+    .then((res) => {
+      if (res.status === 404) {
+        throw new Error('Incorrect email or password');
+      } else {
+        res.json();
+      }
+    })
     .then((resData) => {
       if (resData.status !== 'success') {
         throw new Error(resData.message);
