@@ -65,7 +65,7 @@ All users have to authenticate themselves to use the application.
 
 ### Links
 
-- [Live site URL]()
+- [Live site URL](https://product-feedback-app-f2be8.web.app/)
 - [API documentation](https://akosklema.github.io/product-feedback-api-docs/)
 
 ### Backend
